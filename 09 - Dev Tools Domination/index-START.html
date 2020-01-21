@@ -18,28 +18,44 @@
     }
 
     // Regular
+    console.log('hello');
 
     // Interpolated
+    console.log('Hello I am %s string!', 'POOP');
 
     // Styled
-
+    console.log('%c I am a text with style', 'font-size: 50px')
     // warning!
-
+    console.warn('OH NO THIS IS A WARNING');
     // Error :|
-
+    console.error('WOOHOO ERROR');
     // Info
-
+    console.info('THIS IS A FACT');
     // Testing
+    console.assert(1 === 2, 'That is wrong')
 
     // clearing
-
+    console.clear();
     // Viewing DOM Elements
-
+    // console.log(p);
+    // console.dir(p); // opens up to give a class list and properties and methods that live on the element;
     // Grouping together
-
+    dogs.forEach(dog => {
+      console.groupCollapsed(`${dog.name}`);
+      console.log(`This is ${dog.name}`);
+      console.log(`Age: ${dog.age}`)
+      console.groupEnd(`${dog.name}`);
+    })
     // counting
 
+    console.count('CHRIS')
+    console.count('CHRIS')
+    console.count('Wes')
+    console.count('Wes')
     // timing
+
+    console.time('THIS TIME');
+    console.table(dogs);
 
   </script>
 </body>
